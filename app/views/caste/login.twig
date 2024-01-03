@@ -1,0 +1,577 @@
+{% include 'header.twig' %}
+
+     <div class="wrapper-content">
+    <div class="wrapper-content__header">
+          </div>
+   <div class="wrapper-content__body">
+      <!-- Main variables *content* -->
+      <div id="block_13">
+	<div class="block-signin ">
+		<div class="bg"></div>
+		<div class="divider-top"></div>
+		<div class="divider-bottom"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="block-signin__content">
+						<div class="block-signin__title style-text-signin">
+															<h2 class="text-center"><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">The Best</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="color: rgba(232, 255, 0, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">SMM Panel</strong></span></span></h2>
+<h2 class="text-center"><span style="color: rgba(232, 255, 0, 1)"><strong style="font-weight: bold">Super</strong></span><strong style="font-weight: bold"> </strong><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">Cheap</strong></span><strong style="font-weight: bold"> </strong><span style="color: rgba(232, 255, 0, 1)"><strong style="font-weight: bold">& Super </strong></span><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">Fast!</strong></span></h2>
+<h2 class="text-center"><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">''</strong></span></span><span style="color: rgba(234, 29, 29, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">WHOLESALE</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">PROVIDER</strong></span></span><span style="color: rgba(234, 29, 29, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">''</strong></span></span></h2>
+													</div>
+						<div class="block-signin__description style-text-signin">
+															<p class="text-center"><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">{{ site["site_name"]  }}</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="color: rgba(232, 255, 0, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">is </strong></span></span><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">Right Now</strong></span></span><span style="color: rgba(232, 255, 0, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold"> The Leading SMM</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">Provider</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="color: rgba(232, 255, 0, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">With </strong></span></span><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">High Quality Services.</strong></span></span></p>
+<p class="text-center"><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">We Strive to Deliver</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">Non Drop</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> Results for All of Our </strong></span><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">services</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold">.</strong></span></p>
+<p class="text-center"><span style="color: rgba(232, 255, 0, 1)"><span style="text-align: CENTER">We are Ready to Help You Easily Build Your Online Presence</span></span></p>
+<p class="text-center"><span style="text-align: CENTER">We don't sell </span><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)">Cheap,</span></span><span style="text-align: CENTER"> We sell </span><span style="text-align: CENTER"><span style="color: rgba(21, 255, 68, 1)">Quality Service..</span></span></p>
+													</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="block-signin__card component_card">
+						<div class="card">
+						    
+						    
+						    
+						    {% if errorText %}
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          {{ errorText }}
+        </div>
+      {% endif %}
+      {% if successText %}
+        <div class="alert alert-dismissible alert-success">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          {{ successText }}
+        </div>
+      {% endif %}
+							
+														<form method="post" action="/" class="component_form_group component_checkbox_remember_me">
+								<div class="form-row">
+									<div class="custom-col">
+										<div class="form-group ">
+											<label>Username</label>
+											<input class="form-control" type="text" name="username">
+										<div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+									</div>
+									<div class="custom-col">
+										<div class="form-group ">
+											<label>Password</label>
+											<input class="form-control" type="password" name="password">
+										<div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="custom-col">
+										<div class="form-group ">
+											<div class="form-group__checkbox">
+												<label class="form-group__checkbox-label">
+													<input type="checkbox" name="remember" id="block_13_remember_me">
+													<span class="checkmark"></span>
+												</label>
+												<label class="form-group__label-title" for="block_13_remember_me">Remember me</label>
+											</div>
+										</div>
+									</div>
+									<div class="custom-col">
+										<div class="form-group ">
+																							<div class="sign-in__forgot">
+													<a href="/resetpassword">Forgot password?</a>
+												</div>
+																					</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="custom-col">
+										<div class="form-group d-flex component_button_submit ">
+											<button class="btn btn-big-primary" type="submit">Sign in</button>
+										</div>
+									</div>
+								</div>
+																	<div class="form-row">
+										<div class="custom-col">
+											<div class="form-group d-flex justify-content-center ">
+												<div class="block-signin__remember">
+													<p>Do not have an account?</p>
+													<a class="block-signin__link" href="/signup">Sign up</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									{% if captcha %}
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="{{ captchaKey }}"></div>
+            </div>
+          {% endif %}
+															
+															</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="block_294">
+    <div class="text-block-with-button ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-block-with-button__description">
+                                                    <p class="text-center"><br></p>
+                                            </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-block-with-button__button component_button_link">
+                       <div class="">
+                           <a class="btn btn-big-primary" target="_self" href="/signup">New Account</a>
+                           
+                                                                  <p><strong style="font-weight: bold"></strong></p>
+                                                          </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="block_370">
+    <div class="text-block ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-block__description">
+                                                    <h4 class="text-center"><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">{{ site["site_name"]  }}</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> Reseller Panel</strong></span></h4>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block_233">
+  <div class="totals ">
+    <div class="bg"></div>
+    <div class="divider-top"></div>
+    <div class="divider-bottom"></div>
+    <div class="container">
+      <div class="row align-items-start justify-content-start">
+                              <div class="col-lg-3 col-md-6 mb-2 mt-2">
+              <div class="card totals-card h-100" style="
+                    background: rgba(4, 4, 36, 1);                                  border-color: rgba(244, 9, 9, 1);                                  padding-top: 10px;                                  padding-bottom: 10px;                                                                                                  border-top-left-radius: 20px;                                  border-bottom-left-radius: 20px;                                  border-top-right-radius: 20px;                                  border-bottom-right-radius: 20px;                                  border-left-width: 1px;                                  border-right-width: 1px;                                  border-bottom-width: 1px;                                  border-top-width: 1px;                                                                  border-style: solid; ">
+                <div class="totals-card__count">
+                  <h2 class="totals-card__count-value style-text-primary" style="">
+                    8497
+                  </h2>
+                </div>
+                <div class="totals-card__name">
+                                      <p class="text-center"><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">Total Api users</strong></span></span></p>
+                                  </div>
+              </div>
+            </div>
+                                        <div class="col-lg-3 col-md-6 mb-2 mt-2">
+              <div class="card totals-card h-100" style="
+                    background: rgba(4, 4, 36, 1);                                  border-color: rgba(244, 9, 9, 1);                                  padding-top: 10px;                                  padding-bottom: 10px;                                                                                                  border-top-left-radius: 20px;                                  border-bottom-left-radius: 20px;                                  border-top-right-radius: 20px;                                  border-bottom-right-radius: 20px;                                  border-left-width: 1px;                                  border-right-width: 1px;                                  border-bottom-width: 1px;                                  border-top-width: 1px;                                                                  border-style: solid; ">
+                <div class="totals-card__count">
+                  <h2 class="totals-card__count-value style-text-primary" style="">
+                    40858
+                  </h2>
+                </div>
+                <div class="totals-card__name">
+                                      <p class="text-center"><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">ONLINE</strong></span></span></p>
+                                  </div>
+              </div>
+            </div>
+                                        <div class="col-lg-3 col-md-6 mb-2 mt-2">
+              <div class="card totals-card h-100" style="
+                    background: rgba(4, 4, 36, 1);                                  border-color: rgba(244, 9, 9, 1);                                  padding-top: 10px;                                  padding-bottom: 10px;                                                                                                  border-top-left-radius: 20px;                                  border-bottom-left-radius: 20px;                                  border-top-right-radius: 20px;                                  border-bottom-right-radius: 20px;                                  border-left-width: 1px;                                  border-right-width: 1px;                                  border-bottom-width: 1px;                                  border-top-width: 1px;                                                                  border-style: solid; ">
+                <div class="totals-card__count">
+                  <h2 class="totals-card__count-value style-text-primary" style="">
+                    {{totalorders}} 
+                  </h2>
+                </div>
+                <div class="totals-card__name">
+                                      <p class="text-center"><span style="color: #ffffff"><strong style="font-weight: bold">Today orders</strong></span></p>
+                                  </div>
+              </div>
+            </div>
+                                                                            <div class="col-lg-3 col-md-6 mb-2 mt-2">
+              <div class="card totals-card h-100" style="
+                    background: rgba(4, 4, 36, 1);                                  border-color: rgba(244, 9, 9, 1);                                  padding-top: 10px;                                  padding-bottom: 10px;                                                                                                  border-top-left-radius: 20px;                                  border-bottom-left-radius: 20px;                                  border-top-right-radius: 20px;                                  border-bottom-right-radius: 20px;                                  border-left-width: 1px;                                  border-right-width: 1px;                                  border-bottom-width: 1px;                                  border-top-width: 1px;                                                                  border-style: solid; ">
+                <div class="totals-card__count">
+                  <h2 class="totals-card__count-value style-text-primary" style="">
+                    1241
+                  </h2>
+                </div>
+                <div class="totals-card__name">
+                                      <p class="text-center"><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">Total services</strong></span></span></p>
+                                  </div>
+              </div>
+            </div>
+                        </div>
+    </div>
+  </div>
+</div>
+<div id="block_235">
+    <div class="video ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="video-container">
+                        <div class="video-block">
+                            <div class="video-frame">
+    <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="block_366">
+    <div class="how-it-works ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row how-it-works-row justify-content-start">
+                                    <div class="col-md-3 how-it-works-col">
+                        <div class="card how-it-works-card" style="
+                         background: linear-gradient(180deg, rgba(3, 0, 196, 1) 0.0%,rgba(2, 4, 33, 1) 100.0%); 											 border-color: rgba(234, 29, 29, 1); 																																																																																																			 border-left-width: 1px; 											 border-right-width: 1px; 											 border-bottom-width: 1px; 											 border-top-width: 1px; 											 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12); 											 border-style: solid; ">
+                            <div class="how-it-works-arrow-top style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-942.000000, -1387.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M889.516523,26.5080119 L891.910644,20.9496585 L902,32.9164837 L886.372927,33.807873 L888.723185,28.3469617 C871.347087,21.9210849 854.507984,19.7125409 838.195168,21.7129851 C818.169006,24.1687976 798.907256,32.9719131 780.398868,48.1424468 L779.638673,48.7694781 L778.869195,49.4081513 L777.591849,47.8691952 L778.361327,47.2305219 C797.38492,31.4407805 817.252224,22.2662407 837.951732,19.7278557 C854.622929,17.6834632 871.814783,19.9463129 889.516523,26.5080119 Z" id="Line3"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="how-it-works-arrow-bottom style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-657.000000, -1461.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M493.869195,93.5918487 L494.638673,94.2305219 C513.37968,109.785715 532.894675,118.797561 553.195168,121.287015 C569.507984,123.287459 586.347087,121.078915 603.723185,114.653038 L601.372927,109.192127 L617,110.083516 L606.910644,122.050341 L604.516523,116.491988 C586.814783,123.053687 569.622929,125.316537 552.951732,123.272144 C532.528218,120.767604 512.914862,111.802694 494.12272,96.3975396 L493.361327,95.7694781 L492.591849,95.1308048 L493.869195,93.5918487 Z" id="Line2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="d-flex justify-content-center how-it-works-preview">
+                                <div class="how-it-works-number style-box-shadow-default style-bg-light style-border-radius-50 style-card-number" style="
+                                      width: 80px; 															 height: 80px; 															 background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.0%,rgba(0, 29, 255, 1) 100.0%); 																																																																																																																																																																																				 font-size: 24px; 															 color: #ffffff; ">
+                                    1
+                                </div>
+                            </div>
+                            <div class="how-it-works-title" style="margin-bottom: 8px; padding-left: 0px; padding-right: 0px;">
+                                                                    <p class="text-center"><span style="color: rgba(21, 255, 68, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">1.</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">Sign Up</strong></span></span></p>
+                                                            </div>
+                            <div class="how-it-works-description" style="padding-left: 0px; padding-right: 0x;">
+                                                                    <p class="text-center">Register into our panel, fill in all the necessary data and get ready to be famous.</p>
+                                                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-md-3 how-it-works-col">
+                        <div class="card how-it-works-card" style="
+                         background: linear-gradient(180deg, rgba(11, 9, 183, 1) 0.0%,rgba(2, 4, 26, 1) 100.0%); 											 border-color: rgba(234, 29, 29, 1); 																																																																																																			 border-left-width: 1px; 											 border-right-width: 1px; 											 border-bottom-width: 1px; 											 border-top-width: 1px; 											 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12); 											 border-style: solid; ">
+                            <div class="how-it-works-arrow-top style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-942.000000, -1387.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M889.516523,26.5080119 L891.910644,20.9496585 L902,32.9164837 L886.372927,33.807873 L888.723185,28.3469617 C871.347087,21.9210849 854.507984,19.7125409 838.195168,21.7129851 C818.169006,24.1687976 798.907256,32.9719131 780.398868,48.1424468 L779.638673,48.7694781 L778.869195,49.4081513 L777.591849,47.8691952 L778.361327,47.2305219 C797.38492,31.4407805 817.252224,22.2662407 837.951732,19.7278557 C854.622929,17.6834632 871.814783,19.9463129 889.516523,26.5080119 Z" id="Line3"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="how-it-works-arrow-bottom style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-657.000000, -1461.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M493.869195,93.5918487 L494.638673,94.2305219 C513.37968,109.785715 532.894675,118.797561 553.195168,121.287015 C569.507984,123.287459 586.347087,121.078915 603.723185,114.653038 L601.372927,109.192127 L617,110.083516 L606.910644,122.050341 L604.516523,116.491988 C586.814783,123.053687 569.622929,125.316537 552.951732,123.272144 C532.528218,120.767604 512.914862,111.802694 494.12272,96.3975396 L493.361327,95.7694781 L492.591849,95.1308048 L493.869195,93.5918487 Z" id="Line2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="d-flex justify-content-center how-it-works-preview">
+                                <div class="how-it-works-number style-box-shadow-default style-bg-light style-border-radius-50 style-card-number" style="
+                                      width: 80px; 															 height: 80px; 															 background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.0%,rgba(0, 29, 255, 1) 100.0%); 																																																																																																																																																																																				 font-size: 24px; 															">
+                                    2
+                                </div>
+                            </div>
+                            <div class="how-it-works-title" style="margin-bottom: 8px; padding-left: 0px; padding-right: 0px;">
+                                                                    <p class="text-center"><span style="color: rgba(21, 255, 68, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">2.</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">Add Funds</strong></span></span></p>
+                                                            </div>
+                            <div class="how-it-works-description" style="padding-left: 0px; padding-right: 0x;">
+                                                                    <p class="text-center">Add money to your SMM account and be ready to rise like a star and give your business a new height.</p>
+                                                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-md-3 how-it-works-col">
+                        <div class="card how-it-works-card" style="
+                         background: linear-gradient(180deg, rgba(8, 6, 132, 1) 0.0%,rgba(5, 2, 28, 1) 100.0%); 											 border-color: rgba(234, 29, 29, 1); 																																																																																																			 border-left-width: 1px; 											 border-right-width: 1px; 											 border-bottom-width: 1px; 											 border-top-width: 1px; 											 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12); 											 border-style: solid; ">
+                            <div class="how-it-works-arrow-top style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-942.000000, -1387.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M889.516523,26.5080119 L891.910644,20.9496585 L902,32.9164837 L886.372927,33.807873 L888.723185,28.3469617 C871.347087,21.9210849 854.507984,19.7125409 838.195168,21.7129851 C818.169006,24.1687976 798.907256,32.9719131 780.398868,48.1424468 L779.638673,48.7694781 L778.869195,49.4081513 L777.591849,47.8691952 L778.361327,47.2305219 C797.38492,31.4407805 817.252224,22.2662407 837.951732,19.7278557 C854.622929,17.6834632 871.814783,19.9463129 889.516523,26.5080119 Z" id="Line3"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="how-it-works-arrow-bottom style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-657.000000, -1461.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M493.869195,93.5918487 L494.638673,94.2305219 C513.37968,109.785715 532.894675,118.797561 553.195168,121.287015 C569.507984,123.287459 586.347087,121.078915 603.723185,114.653038 L601.372927,109.192127 L617,110.083516 L606.910644,122.050341 L604.516523,116.491988 C586.814783,123.053687 569.622929,125.316537 552.951732,123.272144 C532.528218,120.767604 512.914862,111.802694 494.12272,96.3975396 L493.361327,95.7694781 L492.591849,95.1308048 L493.869195,93.5918487 Z" id="Line2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="d-flex justify-content-center how-it-works-preview">
+                                <div class="how-it-works-number style-box-shadow-default style-bg-light style-border-radius-50 style-card-number" style="
+                                      width: 80px; 															 height: 80px; 															 background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.0%,rgba(0, 29, 255, 1) 100.0%); 																																																																																																																																																																																				 font-size: 24px; 															 color: #ffffff; ">
+                                    3
+                                </div>
+                            </div>
+                            <div class="how-it-works-title" style="margin-bottom: 8px; padding-left: 0px; padding-right: 0px;">
+                                                                    <p class="text-center"><span style="color: rgba(21, 255, 68, 1)"><span style="text-align: CENTER"><strong style="font-weight: bold">3.</strong></span></span><span style="text-align: CENTER"><strong style="font-weight: bold"> </strong></span><span style="color: #ffffff"><span style="text-align: CENTER"><strong style="font-weight: bold">Choose Service</strong></span></span></p>
+                                                            </div>
+                            <div class="how-it-works-description" style="padding-left: 0px; padding-right: 0x;">
+                                                                    <p class="text-center"><span style="text-align: CENTER">Select a service and place an order and get ready to start receiving more publicity on social media.</span></p>
+                                                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-md-3 how-it-works-col">
+                        <div class="card how-it-works-card" style="
+                         background: linear-gradient(180deg, rgba(5, 14, 158, 1) 0.0%,rgba(3, 1, 18, 1) 100.0%); 											 border-color: rgba(234, 29, 29, 1); 																																																																																																			 border-left-width: 1px; 											 border-right-width: 1px; 											 border-bottom-width: 1px; 											 border-top-width: 1px; 											 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12); 											 border-style: solid; ">
+                            <div class="how-it-works-arrow-top style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-942.000000, -1387.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M889.516523,26.5080119 L891.910644,20.9496585 L902,32.9164837 L886.372927,33.807873 L888.723185,28.3469617 C871.347087,21.9210849 854.507984,19.7125409 838.195168,21.7129851 C818.169006,24.1687976 798.907256,32.9719131 780.398868,48.1424468 L779.638673,48.7694781 L778.869195,49.4081513 L777.591849,47.8691952 L778.361327,47.2305219 C797.38492,31.4407805 817.252224,22.2662407 837.951732,19.7278557 C854.622929,17.6834632 871.814783,19.9463129 889.516523,26.5080119 Z" id="Line3"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="how-it-works-arrow-bottom style-svg-g-primary">
+                                <svg width="125px" height="31px" viewBox="0 0 125 31" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-657.000000, -1461.000000)" fill="#1E79E4" id="Group-10">
+                                            <g transform="translate(165.000000, 1368.000000)">
+                                                <path d="M493.869195,93.5918487 L494.638673,94.2305219 C513.37968,109.785715 532.894675,118.797561 553.195168,121.287015 C569.507984,123.287459 586.347087,121.078915 603.723185,114.653038 L601.372927,109.192127 L617,110.083516 L606.910644,122.050341 L604.516523,116.491988 C586.814783,123.053687 569.622929,125.316537 552.951732,123.272144 C532.528218,120.767604 512.914862,111.802694 494.12272,96.3975396 L493.361327,95.7694781 L492.591849,95.1308048 L493.869195,93.5918487 Z" id="Line2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="d-flex justify-content-center how-it-works-preview">
+                                <div class="how-it-works-number style-box-shadow-default style-bg-light style-border-radius-50 style-card-number" style="
+                                      width: 80px; 															 height: 80px; 															 background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.0%,rgba(0, 29, 255, 1) 100.0%); 																																																																																																																																																																																				 font-size: 24px; 															 color: #ffffff; ">
+                                    4
+                                </div>
+                            </div>
+                            <div class="how-it-works-title" style="margin-bottom: 8px; padding-left: 0px; padding-right: 0px;">
+                                                                    <p class="text-center"><span style="color: rgba(21, 255, 68, 1)"><strong style="font-weight: bold">4.</strong></span><strong style="font-weight: bold"> </strong><span style="color: #ffffff"><strong style="font-weight: bold">Enjoy Popularity</strong></span></p>
+                                                            </div>
+                            <div class="how-it-works-description" style="padding-left: 0px; padding-right: 0x;">
+                                                                    <p class="text-center"><span style="text-align: CENTER">We will create and proceed with an order and inform you once done. Enjoy and stay with us. </span></p>
+                                                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+<div id="block_382">
+    <div class="video-block ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-md-flex align-items-start">
+                        <div class="video-block__description">
+                                                            <h3 class="text-center"><span style="text-align: CENTER">SMM (Social Media Marketing) is the use of social media platforms such as Instagram, Facebook, Twitter, Youtube and many more to promote yourself or your company. If you are looking for a way to boost your online presence, then your best choice is our SMM panel where we offer services to help you boost your online presence across all social media platforms at the cheapest prices.</span></h3>
+                                                    </div>
+                        <div class="video-block__video">
+                            <div class="video-frame">
+    <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            <div class="video-frame__poster" style="background-image: url(##)"></div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="block_335">
+    <div class="reviews-slider ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+                                    <div class="reviews-slider">
+                <div data-slider="1" data-slider-options="{'dots':true,'infinite':true,'speed':500,'autoplay':true,'autoplaySpeed':5000,'slidesToShow':2,'slidesToScroll':1,'responsive':[{'breakpoint':991,'settings':{'slidesToShow':1,'slidesToScroll':1}}],'rtl':false}" class="slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4630px; transform: translate3d(-1852px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 463px;" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/8nqrqar79gmdc5u5.jpg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff">Sara</span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>SMM services I got here did exactly what I expected them to do — they helped my business get more attention and increased my sales. Thank you!</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 463px;" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/2oijeicdpnc5ongy.jpg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Mohammed</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>I was able to give my business a great boost using SMM services I ordered on this panel, highly recommend these guys!</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 463px;" role="tabpanel" id="slick-slide00" tabindex="-1" aria-describedby="slick-slide-control00"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/b1tmdye0h7xonpdt.jpeg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Faisal</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>Been using it for a while now, and the delivery rates are much better than other SMM Panels out there.</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 463px;" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/hluwahf7otectrf9.png);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Samaira</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>Being able to chose from multiple Payment options such as Perfect Money,Payeer,Paytm for india,PayoneerBTC etc. is one of the reasons I love this panel.</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" style="width: 463px;" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/8nqrqar79gmdc5u5.jpg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff">Sara</span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>SMM services I got here did exactly what I expected them to do — they helped my business get more attention and increased my sales. Thank you!</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 463px;" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/2oijeicdpnc5ongy.jpg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Mohammed</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>I was able to give my business a great boost using SMM services I ordered on this panel, highly recommend these guys!</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" style="width: 463px;" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/b1tmdye0h7xonpdt.jpeg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Faisal</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>Been using it for a while now, and the delivery rates are much better than other SMM Panels out there.</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 463px;" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/hluwahf7otectrf9.png);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Samaira</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>Being able to chose from multiple Payment options such as Perfect Money,Payeer,Paytm for india,PayoneerBTC etc. is one of the reasons I love this panel.</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 463px;" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/8nqrqar79gmdc5u5.jpg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff">Sara</span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>SMM services I got here did exactly what I expected them to do — they helped my business get more attention and increased my sales. Thank you!</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 463px;" tabindex="-1"><div><div class="reviews-slider__slide" style="width: 100%; display: inline-block;">
+                            <div class="card" style="
+                             background: rgba(9, 5, 75, 1);                                  border-color: rgba(180, 255, 27, 1);                                                                                                                                                                                                                                                                                                  border-left-width: 2px;                                  border-right-width: 2px;                                  border-bottom-width: 2px;                                  border-top-width: 2px;                                                                  border-style: dotted; ">
+                                                                    <div class="reviews-slider__slide-photo" style="margin-bottom: 10px; justify-content: flex-start;">
+                                        <div class="reviews-slider__slide-avatar" style="background-image: url(https://cdn.mypanel.link/hu99jz/2oijeicdpnc5ongy.jpg);"></div>
+                                    </div>
+                                                                <div class="reviews-slider__slide-name" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+                                                                            <p><span style="color: #ffffff"><strong style="font-weight: bold">Mohammed</strong></span></p>
+                                                                    </div>
+                                <div class="reviews-slider__slide-description" style="padding-left: 0px; padding-right: 0px;">
+                                                                            <p>I was able to give my business a great boost using SMM services I ordered on this panel, highly recommend these guys!</p>
+                                                                    </div>
+                            </div>
+                        </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button><ul class="slick-dots" style="display: block;" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 2" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 2" tabindex="0" aria-selected="true">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 2" tabindex="-1">4</button></li></ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+    
+{% include 'footer.twig' %}

@@ -1,0 +1,225 @@
+{% include 'header.twig' %}
+
+
+ <div class="wrapper-content__body">
+      <!-- Main variables *content* -->
+      <div id="block_63">
+	<div class="orders-history ">
+		<div class="bg"></div>
+		<div class="divider-top"></div>
+		<div class="divider-bottom"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<div class="orders-history__margin-tab">
+						<div class="component_status_tabs">
+							<div class="">
+								<ul class="nav nav-pills tab">
+									<li class="nav-item">
+                            <a class="nav-link active" href="/orders">All</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="/orders/pending">Pending</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="/orders/inprogress">In progress</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="/orders/completed">Completed</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="/orders/partial">Partial</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="/orders/processing">Processing</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="/orders/canceled">Canceled</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+                                    <div class="row">
+				<div class="col">
+					<div class="orders-history__margin-table">
+						<div class="table-bg component_table ">
+							<div class="table-wr ">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<div class="orders-history__margin-search orders-history__header-search">
+													<div class="component_form_group component_button_search">
+														<div class="">
+															<form action="/orders" method="get" id="history-search">
+																<div class="input-group">
+																	<input type="text" name="search" class="form-control" value="" placeholder="Search">
+																	<div class="input-group-append">
+																		<button class="btn btn-big-secondary" type="submit">
+																			<span class="fas fa-search"></span>
+																		</button>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</th>
+										</tr>
+									</thead>
+								</table>
+								<div class="table-responsive table-responsive__search ">
+									<table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Link</th>
+                                            <th scope="col">Charge</th>
+                                            <th scope="col">Start count</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Service</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Remains</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        {% for order in orders %}
+              <tr>
+<td>
+<span class="order_id" id="order-{{ order['id'] }}">{{ order['id'] }}</span>
+
+                                <!-- Refill Status -->
+
+                                     {% if order['refillButton'] %}
+							 <div class="col-lg-6 col-12">
+							 {% elseif order['cancelButton'] %}
+							 <div class="col-lg-6 col-12">
+							 {% else %}
+							 <div class="col-lg-8 col-12">
+							 {% endif %}
+                                    
+                                    <!-- Refill Status -->
+                                    
+                                        
+{% if order['order_where'] == "api"  %}<a class="btn btn-actions">Api</a>{% endif %} </td>
+
+
+
+
+                <td>
+                <div class="order_date">
+                                                {{ order['date'] }}
+                                            </div>
+                </td>
+                
+                
+                <td>
+                <div class="order_link_wrap">
+                                                <a href="{{ order['link'] }}" target="_blank" class="order_link">
+                                                    <span> <i class="far fa-link"></i> {{ order['link'] }}</span>
+                                                </a>
+                                            </div></td>
+            
+            
+                 <td>{{order["charge"]}}</td>
+                <td class="nowrap">{{ order['start_count'] }}</td>
+                <td>{{ order['quantity'] }}</td>
+                <td>{{ order['service'] }}</td>
+                <td>{{ order['status'] }}</td>
+                <td>{{ order['remains'] }}</td>
+                
+                 
+                 
+                 
+                 
+                 
+              </tr>
+            {% endfor %}
+
+                                        
+                                                                            </tbody>
+                                </table>
+                                                            </div>
+                                                            
+                                                             {% if pagination["count"] > 1 %}
+        <ul class="pagination">
+
+          {% if pagination["current"] != 1 %}
+            <li>
+              <a class="btn btn-actions" href="orders/{{ status }}/{{ pagination["previous"] }}{% if search %}?search={{ search }}{% endif %}" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+              </a>
+            </li>
+          {% endif %}
+
+          {% set r, l = 3, 3 %}
+
+          {% if pagination['current'] == 1 %}
+            {% set r = 7 %}
+          {% endif %}
+
+          {% if pagination['current'] == 2 %}
+            {% set r = 5 %}
+          {% endif %}
+
+          {% if pagination['current'] >= pagination['count'] %}
+            {% set l = 5 %}
+          {% endif %}
+
+          {% for page in 1..pagination["count"] %}
+            {% if page >= (pagination['current']-l) and page <= (pagination['current']+r) %}
+              <li{% if page == pagination['current'] %} class="active" {%endif%}><a class="btn btn-actions" 
+ href="orders/{{ status }}/{{ page }}{% if search %}?search={{ search }}{% endif %}">{{ page }}</a></li>
+            {%endif%}
+          {% endfor %}
+
+          {% if pagination['current'] < pagination['count'] %}
+            <li>
+              <a class="btn btn-actions" href="orders/{{ status }}/{{ pagination['next'] }}{% if search %}?search={{ search }}{% endif %}" aria-label="Next">
+                <span aria-hidden="true">»</span>
+              </a>
+            </li>
+          {% endif %}
+
+        </ul>
+      {% endif %}
+
+                                                            
+                    </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                </div>
+            </div>
+        </main>
+
+
+
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/rtti2ycjc5wotdxc.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/d14kcfnonusj4tua.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/7945icpx8a0g5eee.js">
+      </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":23,"auth":0,"live":true,"csrftoken":"YZWcf1wI7FZVAqCs8J9tGz0UdKEVVjsOKbk6QoM-QdUp2KQ5EUOHPGV2zvm3_QFEV0FMlyQxS0BM-1IYyFAFkg=="};   </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":23,"auth":0,"live":true,"csrftoken":"YZWcf1wI7FZVAqCs8J9tGz0UdKEVVjsOKbk6QoM-QdUp2KQ5EUOHPGV2zvm3_QFEV0FMlyQxS0BM-1IYyFAFkg=="};   </script>
+  <script type="text/javascript" >
+     window.modules.signin = [];   </script>
+  <script type="text/javascript" >
+      </script>
+</body>
+</html>
+
+{% include 'footer1.twig' %}

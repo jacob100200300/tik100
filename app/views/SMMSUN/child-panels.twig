@@ -1,0 +1,168 @@
+{% include 'header.twig' %}
+
+    <div class="wrapper-content__body">
+      <!-- Main variables *content* -->
+      
+      <div id="block_314">
+    <div class="faq ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                                                    <div class="col-lg-12">
+                                <div class="faq-block__card">
+                                    <div class="card" style="
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ">
+                                        <div class="faq-block__header collapsed" data-toggle="collapse" data-target="#faq-block-314-1" aria-expanded="false" aria-controls="#faq-block-314-1">
+                                            <div class="faq-block__header-title">
+                                                                                                    <h4><span style="color: rgba(251, 99, 0, 1)"><strong style="font-weight: bold">What is Child Panel?</strong></span></h4>
+                                                                                            </div>
+                                            <div class="faq-block__header-icon">
+                                                <div class="style-text-dark faq-block__icon" style=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="faq-block__body collapse" id="faq-block-314-1">
+                                            <div class="faq-block__body-description" style="padding-top: 0px">
+                                                                                                    <p><span style="color: #000000">A Child panel is your own website to sell SMM services. You will simply connect it to us and sell our services directly to your clients!</span></p>
+<p><span style="color: #000000">All orders placed at your child panel will be added to </span><span style="color: #000000"><strong style="font-weight: bold">smmpanelbdlab.com</strong></span><span style="color: #000000"> automatically till you have funds in your </span><span style="color: #000000"><strong style="font-weight: bold">smmpanelbdlab.com</strong></span><span style="color: #000000"> account.</span></p>
+<p><span style="color: #000000">Orders will be charged the same as now.</span></p>
+<h4><br></h4>
+<h4><span style="color: rgba(251, 99, 0, 1)"><strong style="font-weight: bold">How to Order Child Panel?</strong></span></h4>
+<p><span style="color: #000000"><strong style="font-weight: bold">1. Buy a domain</strong></span></p>
+<p><span style="color: #000000">To get started you need to buy a domain. You can buy it from GoDaddy.com</span></p>
+<p><span style="color: #000000"><strong style="font-weight: bold">2. Order Child Panel</strong></span></p>
+<p><span style="color: #000000">After buying the domain, visit the child panel page/check below and order the Child Panel with your new domain</span></p>
+<p><span style="color: #000000"><strong style="font-weight: bold">3. Set domain name server</strong></span></p>
+<p><span style="color: #000000">After placing an order for the child panel set DNS to ns1.perfectdns.com and &nbsp;ns2.perfectdns.com to Your Domain ( Godaddy account )</span></p>
+<p><span style="color: #000000"><strong style="font-weight: bold">4. Import services and set price</strong></span></p>
+<p><span style="color: #000000">After activating the Child panel, you need to log in to your Child panel admin ( YourDomain.com/Admin ) and Import Our services with 20% &nbsp;to 100% of Profit.</span></p>
+<p><span style="color: #000000">If you face any issues Contact us</span><a target="_self" href="https://smmpanelbdlab.com/"><span style="color: #000000">.</span></a><span style="color: #000000"> We are here to help!</span></p>
+<h4><br></h4>
+<h4><span style="color: rgba(251, 99, 0, 1)"><strong style="font-weight: bold">Benefits of buying child panel</strong></span></h4>
+<p><span style="color: #000000">1. Your own website &amp; a complete business</span></p>
+<p><span style="color: #000000">2. 100% automated services from </span><span style="color: #000000"><strong style="font-weight: bold">smmpanelbdlab.com</strong></span><span style="color: #000000"> via API</span></p>
+<p><span style="color: #000000">3. You can sell services for any price you want and place unlimited orders</span></p>
+<p><span style="color: #000000">4. All currency and hundreds of payment methods support</span></p>
+<p><span style="color: #000000">5. Full access you can add, edit, remove, enable, or disable any services anytime.</span></p>
+<p><span style="color: #000000">6. Receive payments directly from customers automatically</span></p>
+<p><span style="color: #000000">7. Powerfull admin Panel features</span></p>
+<p><span style="color: #000000">8. Free HTTPS/SSL certificate</span></p>
+<p><span style="color: #000000">9. Customizable theme for free</span></p>
+<p><span style="color: #000000">10. VIP support from </span><span style="color: #000000"><strong style="font-weight: bold">smmpanelbdlab.com</strong></span><span style="color: #000000"> admins.</span></p>
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div id="block_94">
+    <div class="add-funds__form">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row add-funds__form-alignment">
+                <div class="col-lg-12 ">
+                    <div class="component_card">
+                        <div class="card">
+
+<br>
+{% if error %}
+      <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+        {{ errorText }}
+      </div>
+    {% endif %}  
+
+    {% if data["childpanel"]["success"] == 1 %}
+      <div class="alert alert-dismissible alert-success">
+          <strong> Order Id: </strong> {{ data['childpanel']['id'] }} <br>
+          <strong> Service: </strong> {{ data['childpanel']['service'] }} <br>
+          <strong> Domain: </strong> {{ data['childpanel']['link'] }} <br>
+          <strong> Quantity: </strong> {{ data['childpanel']['quantity'] }} <br>
+          <strong> Charge: </strong> {{ data['childpanel']['price'] }} <br>
+      </div>
+    {% endif %}
+    <form name="contact-form" action="child-panels" method="post">
+    <div class="form-group">
+    <label for="Domain">Domain</label>
+    <input type="text" class="form-control" name="domain" required>
+    </div>
+		 <div class="alert alert-info " id="orderNote">
+            <p class="help-block" style="margin-bottom: 5px">Please change nameservers to:</p><ul style="color: #737373; padding-left: 20px"><li>ns1.smmpanelbdlab.com</li><li>ns2.smmpanelbdlab.com</li></ul>        </div>
+    
+		
+		<div class="form-group">
+        
+<label class="Domain" for="currency">Currency</label>
+			
+		<select class="form-control" name="currency" required>
+<option value="USD">United States Dollars (USD)</option>
+</select>
+    </div>
+	
+    <div class="form-group">
+    <label for="exampleInputEmail1">Admin Username</label>
+    <input type="text" class="form-control" name="username" required>
+    </div>
+		
+		  <div class="form-group">
+        
+<label class="control-label" for="orderpanelform-password">Admin Password</label><input type="password" class="form-control" name="password" required>
+    </div>
+    		  <div class="form-group">
+        
+<label class="control-label" for="orderpanelform-password">Confirm Password</label><input type="password" class="form-control" name="password_confirm" required>
+    </div>
+		
+
+    <div class="form-group">
+<label for="charge" class="control-label"> Price per month</label>
+<input type="text" class="form-control" value="{{site_base_currency_symbol}}{{" "}}{{site["childpanel_price"]}}" readonly>
+</div>
+    <button type="submit" class="btn btn-block btn-big-primary" name="submit" value="Submit" id="submit_form">Submit Order</button>
+    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    <div class="wrapper-content__footer">
+           </div>
+  </div>
+</div>
+            
+
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/rtti2ycjc5wotdxc.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/d14kcfnonusj4tua.js">
+      </script>
+  <script type="text/javascript" src="https://cdn.mypanel.link/global/7945icpx8a0g5eee.js">
+      </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":23,"auth":0,"live":true,"csrftoken":"YZWcf1wI7FZVAqCs8J9tGz0UdKEVVjsOKbk6QoM-QdUp2KQ5EUOHPGV2zvm3_QFEV0FMlyQxS0BM-1IYyFAFkg=="};   </script>
+  <script type="text/javascript" >
+     window.modules.layouts = {"theme_id":23,"auth":0,"live":true,"csrftoken":"YZWcf1wI7FZVAqCs8J9tGz0UdKEVVjsOKbk6QoM-QdUp2KQ5EUOHPGV2zvm3_QFEV0FMlyQxS0BM-1IYyFAFkg=="};   </script>
+  <script type="text/javascript" >
+     window.modules.signin = [];   </script>
+  <script type="text/javascript" >
+      </script>
+</body>
+</html>
+
+{% include 'footer1.twig' %}

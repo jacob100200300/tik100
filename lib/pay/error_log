@@ -1,0 +1,22 @@
+[21-Aug-2023 13:37:07 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 38
+[21-Aug-2023 13:37:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 38
+[21-Aug-2023 13:37:07 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 39
+[21-Aug-2023 13:37:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 39
+[21-Aug-2023 13:37:07 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 40
+[21-Aug-2023 13:37:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 40
+[21-Aug-2023 13:39:13 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 4
+[21-Aug-2023 13:39:21 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 4
+[21-Aug-2023 13:39:34 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 4
+[21-Aug-2023 13:39:53 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 41
+[21-Aug-2023 13:39:53 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 41
+[21-Aug-2023 13:39:53 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 42
+[21-Aug-2023 13:39:53 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 42
+[21-Aug-2023 13:39:53 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 43
+[21-Aug-2023 13:39:53 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 43
+[21-Aug-2023 13:39:56 UTC] PHP Notice:  Only variables should be passed by reference in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 10
+[21-Aug-2023 13:39:59 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 41
+[21-Aug-2023 13:39:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 41
+[21-Aug-2023 13:39:59 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 42
+[21-Aug-2023 13:39:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 42
+[21-Aug-2023 13:39:59 UTC] PHP Notice:  Undefined index: image in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 43
+[21-Aug-2023 13:39:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/femviral/public_html/aadomain/fav/lib/pay/db.php on line 43
